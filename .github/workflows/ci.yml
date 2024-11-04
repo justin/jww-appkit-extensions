@@ -1,0 +1,35 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint:
+    name: Linting
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: SwiftLint
+        uses: norio-nomura/action-swiftlint@3.2.1
+
+  test:
+    name: "Unit Tests"
+    runs-on: macos-15
+    env:
+      XCODE_SCHEME: "JWWUIKit"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build and Test (macOS)
+        uses: sersoft-gmbh/xcodebuild-action@v3
+        with:
+          spm-package: "./"
+          scheme: JWWAppKit
+          destination: platform=macOS
+          action: test
