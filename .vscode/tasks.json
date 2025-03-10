@@ -1,0 +1,19 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "swift",
+      "args": ["build", "--build-tests", "-Xswiftc", "-diagnostic-style=llvm"],
+      "env": {},
+      "cwd": "/Users/justinwilliams/src/justin/jww-appkit-extensions",
+      "disableTaskQueue": true,
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": [],
+      "label": "swift: Build All",
+      "detail": "swift build --build-tests -Xswiftc -diagnostic-style=llvm"
+    }
+  ]
+}
