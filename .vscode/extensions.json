@@ -1,3 +1,8 @@
 {
-  "recommendations": ["swiftlang.swift-vscode"]
+  "recommendations": [
+    "swiftlang.swift-vscode",
+    "sweetpad.sweetpad",
+    "Gruntfuggly.triggertaskonsave",
+    "vadimcn.vscode-lldb"
+  ]
 }

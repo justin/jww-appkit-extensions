@@ -1,0 +1,31 @@
+--rules mark
+--disable identifier_name
+--disable cyclomatic_complexity
+--disable nesting
+
+--enable attributes
+--enable empty_count
+--enable file_header
+--enable fatal_error_message
+--enable private_outlet
+--enable raw_value_for_camel_cased_codable_enum
+
+--line-length 150
+--max-width 500
+--ignore-comments
+--ignore-urls
+
+--identifier-name-min-length 2
+--identifier-name-max-length 90
+--identifier-name-exclude id,x,y
+
+--file-length-warning 500
+--file-length-error 1200
+
+--type-body-length-warning 500
+--type-body-length-error 1200
+
+--function-body-length-warning 80
+--function-body-length-error 120
+
+--custom-rule force_https "Force HTTPS over HTTP" "((?i)http(?!s))" "URLs should use HTTPS rather than HTTP to ensure secure connections." warning
