@@ -3,6 +3,7 @@ import AppKit
 /// Protocol that defines required attributes to load a view from a Xib file
 @MainActor
 public protocol XibInitializable {
+    /// The main view in the xib.
     var contentView: NSView { get }
 
     /// The name of the nib file that contains our view resource(s).
