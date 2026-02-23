@@ -1,6 +1,8 @@
 {
   "triggerTaskOnSave.tasks": {
-    "sweetpad: build": ["**/*.swift"]
+    "sweetpad: build": [
+      "**/*.swift"
+    ]
   },
   "triggerTaskOnSave.on": true,
   "triggerTaskOnSave.showNotifications": false,
@@ -23,5 +25,8 @@
   "files.exclude": {
     "**/.build": true,
     "**/.swiftpm": true
+  },
+  "chat.tools.terminal.autoApprove": {
+    "git tag": true
   }
 }
