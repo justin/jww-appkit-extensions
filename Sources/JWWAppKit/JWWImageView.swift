@@ -25,7 +25,7 @@ open class ImageAspectFillView: NSImageView {
     public init(image: NSImage?) {
         super.init(frame: .zero)
     }
-    
+
     required public init?(coder: NSCoder) {
         super.init(coder: coder)
     }

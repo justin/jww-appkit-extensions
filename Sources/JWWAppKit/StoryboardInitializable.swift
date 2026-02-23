@@ -23,7 +23,6 @@ public extension StoryboardInitializable {
 
 public extension StoryboardInitializable where Self: NSViewController {
     static func instantiateFromStoryboard(_ storyboard: NSStoryboard) -> Self {
-        // swiftlint:disable:next force_cast
         return storyboard.instantiateController(identifier: Self.identifier) { coder in
             Self(coder: coder)
         }
@@ -32,7 +31,6 @@ public extension StoryboardInitializable where Self: NSViewController {
 
 public extension StoryboardInitializable where Self: NSWindowController {
     static func instantiateFromStoryboard(_ storyboard: NSStoryboard) -> Self {
-        // swiftlint:disable:next force_cast
         return storyboard.instantiateController(identifier: Self.identifier) { coder in
             Self(coder: coder)
         }

@@ -5,7 +5,8 @@ import Cocoa
 @MainActor
 struct NSViewExtensionTests {
     /// Validate we can set `usesAutoLayout` to true and it sets the underlying propery to the expected value.
-    @Test func testEnablingAutoLayoutOnView() {
+    @Test
+    func testEnablingAutoLayoutOnView() {
         let view = NSView()
         view.usesAutoLayout = true
 
@@ -13,7 +14,8 @@ struct NSViewExtensionTests {
     }
 
     /// Validate we can set `usesAutoLayout` to false and it sets the underlying propery to the expected value.
-    @Test func testDisablingAutoLayoutOnView() {
+    @Test
+    func testDisablingAutoLayoutOnView() {
         let view = NSView()
         view.usesAutoLayout = false
 

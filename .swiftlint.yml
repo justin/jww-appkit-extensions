@@ -69,5 +69,8 @@ custom_rules:
     match_kinds: string
     message: "URLs should use HTTPS rather than HTTP to ensure secure connections."
     severity: warning
+attributes:
+  always_on_same_line: ["@IBAction", "@NSManaged", "@Environment", "@State", "@Binding", "@ObservedObject", "@EnvironmentObject", "@SceneStorage", "@Published", "@StateObject", "@ViewStorage", "@FocusState", "@GestureState", "@propertyWrapper"]
+  always_on_line_above: ["@Parameter", "@ViewBuilder", "@available", "@Model"]
 
 reporter: "xcode"

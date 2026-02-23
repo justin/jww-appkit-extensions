@@ -3,7 +3,7 @@ import AppKit
 extension NSView {
     @MainActor
     @propertyWrapper public struct JWWViewLoading<Value> {
-        private var storedValue: Value? = nil
+        private var storedValue: Value?
 
         /// Undocumented but widespread subscript method for accessing the wrapped object. This
         /// technique is alluded to in the original property wrappers Swift Evolution proposal,
@@ -40,8 +40,7 @@ extension NSView {
                     message: "This property wrapper is only available on classes because it accesses its container using reference semantics"
         )
         public var wrappedValue: Value {
-            get { fatalError("Unsupported") }
-            set { fatalError("Unsupported") }
+            fatalError("Unsupported")
         }
     }
 }
